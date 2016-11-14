@@ -275,11 +275,11 @@
 
 
 .tooltipster-light {
-	border-radius: 5px; 
-	border: 1px solid #cccccc;
-	background: white;
-	color: #666666;
-	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    background: white;
+    color: #666666;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
 }
 .tooltipster-light .tooltipster-content {
 	font-family: Arial, sans-serif;
@@ -294,6 +294,11 @@
 	border: 1px solid orange;
 	background: white;
 	color: #ff712a;
+	z-index: 10000;
+}
+.tooltipster-error .tooltipster-arrow-top-right span,
+.tooltipster-error .tooltipster-arrow-top-right .tooltipster-arrow-border {
+	    bottom: -8px;
 }
 .tooltipster-error .tooltipster-content {
 	font-family: Arial, sans-serif;

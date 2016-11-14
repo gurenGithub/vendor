@@ -140,9 +140,6 @@
 		if(flag && $el.data('default') && $el.val() === $el.data('default') ) {
 			flag = false;
 		}
-		if( $.trim($el.val()).length == 0 ) {
-			flag = false;
-		}
 
 		return {
 			isPassed: flag,
@@ -227,7 +224,8 @@
 			isMinLength: isMinLength,
             isMaxLength: isMaxLength,
 			isNoChinese: isNoChinese,
-			msg: msg
+			msg: msg,
+			reg: reg
 		};
 
 	return form;
@@ -259,7 +257,6 @@ if($.fn.tooltipster !== undefined) {
 					    trigger: 'custom',
 					    autoClose: true,
 					    timer: 5000,
-					    positionTracker: formValid.positionTracker,
 					    interactive: true,
 					    debug: false,
 					    functionAfter: function(){
